@@ -1,5 +1,5 @@
 .,English
-quest.name,Arkham Crime Wave (v2.2)
+quest.name,Arkham Crime Wave (v2.4)
 quest.authors_short,Nicola Zee
 quest.description,Arkham Crime Wave\n\nAn article in the Sunday newspaper catches your eye,\n <i>Arkham Crime Wave</i>.\nTwo murder victims in a week and both missing several bones.\nEven for Arkham, that is unusual.\nThe writer of the article, Kathleen Ross, claims the town is sinking into a cesspit of crime.\nA editorial comment by John Johnson blames the notorious O'Bannion gang.\n\nSpecial Notes\n\nArkham Crime Wave is a murder mystery.\nThe key evidence can be checked by examining items but\nnote-taking is recommended.\nIt is a sequel to the FFG scenario Gangs of Arkham.\nYou do not have to play Gangs of Arkham before playing.\nLike Gangs of Arkham, there is some 1920's slang.
 QSTCANCEL,Cancel
@@ -100,7 +100,6 @@ EventExploreMove.text,{qst:QSTEXPLOREMOVE}
 EventExploreMove.button1,{qst:QSTCONTINUE}
 EventPlaceOfficeToCorner.button1,{qst:QSTCONTINUE}
 EventPlaceCravenMainStreet.button1,{qst:QSTCONTINUE}
-EventPlaceSouthCornerToSouthStreet.button1,{qst:QSTCONTINUE}
 EventGainForensicEvidence.button1,{qst:QSTCONTINUE}
 TokenSquareToEastStreet.button1,{qst:QSTREVEAL}
 EventPlaceEastStreet.text,Place the {c:TileEastStreet} {qst:QSTTILE}.\n\nPlace 1 Wall Token.
@@ -115,7 +114,7 @@ TokenShopDisplay.text,The display case contains arts and crafts such as dream-ca
 EventPlacePrinters.text,Two huge printing presses dominate the room.\nPrint workers are hard at work getting the presses ready to print the next edition of the newspaper.\n\nPlace the {c:TilePrinters} {qst:QSTTILE}.
 TokenSquareToAlley.button1,{qst:QSTREVEAL}
 EventPlaceEastStreetTokens.text,Place {var:countEastStreetSights} Sight Token(s).
-TokenEastStreetToCorner.text,You may only click {qst:QSTREVEAL} if you are in the {c:EastStreetTile} tile.
+TokenEastStreetToCorner.text,You may only click Reveal if you are in the {c:TileEastStreet} tile.
 EventSocietyDoorDefault.text,There is a sign next to the door,\n<i>\nArkham Historical Society.\nThe Society is closed to the public.</i>\n\nThe door is locked by large old locks.\nYou will need a set of Old Keys to unlock the door.
 EventPlaceSociety.text,You open the door.\nThe room is packed full of bookshelves, display cabinets and paintings of prominent patrons of the society.\nIn addition, there are pictures and photographs of Arkham and Arkham County through the ages.\n\nPlace the {c:TileSociety} tile.
 EventPlaceChapel.button1,{qst:QSTCONTINUE}
@@ -155,7 +154,6 @@ EventPlaceFreezer.button1,{qst:QSTCONTINUE}
 TokenStreetToPrinters.text,There is a sign above the door,\n<i>Arkham Gazette.</i>
 EventBilliardsEntry.button1,{qst:QSTPASS}
 EventPlaceExhibit.text,There is a display case containing an assortment of Native American artifacts.\n\nPlace a Search Token as indicated.
-TokenCornerToEastStreet.button1,{qst:QSTREVEAL}
 EventPlaceMainStreetProtest.text,A crowd marches down the street.\nOutside the door of the Town Morgue, the ringleader bangs the door with his crowbar and shouts, \n<i>Stop the Killings!\nDown with Drew!</i>\n
 EventPlaceShopTable.text,A table is covered receipts and invoices.\nBuried beneath the pile of papers is a large pottery dish covered in ash.\n\nPlace a Search Token as indicated.
 EventPlaceEastStreet.button1,{qst:QSTCONTINUE}
@@ -169,7 +167,6 @@ EventPlaceOfficeToCorner.text,The door leads out into the street.\n\n{qst:QSTPLA
 EventKillerSmokesCigar.button1,{qst:QSTCONTINUE}
 EventPoliceResignSuccess.text,Police Officer Walker says,<i>\nTell the protesters I will announce my resignation tomorrow!\nThere is a couple of things I need to sort out first.\n</i>\nRemove the Police Officer Walker Token.
 EventGainAzureFlame.button1,{qst:QSTCONTINUE}
-EventPlaceSouthCornerToOffice.text,A door is labelled,<i>\nPolice Office</i>
 EventPlaceStormDrain.button1,{qst:QSTCONTINUE}
 EventCravenMission.text,He says,<i>\nDuncan of the Newport District Police Department contacted me about a suspicious man called Bertie Bingham.\nHe arrived on Tuesday on a ship from South Carolina.\nOn Friday, I received a message from Duncan that Duncan was following a new lead.\n</i>
 EventPlaceStormDrain.text,You see the storm drain.\nWater is gushing out of the drain.\n\nPlace 1 Search Token
@@ -207,6 +204,7 @@ EventPlacePriest.text,A middle-aged priest is praying.\nHe's looking tired and c
 EventPlaceAlley.button1,{qst:QSTCONTINUE}
 EventPlaceSociety.button1,{qst:QSTCONTINUE}
 TokenCornerToEastStreet.text,There is a street sign, <i>East Street</i>.\n\nYou may only click {qst:QSTREVEAL} if you are in the {c:TileCorner} tile.
+TokenCornerToEastStreet.button1,{qst:QSTREVEAL}
 EventPlaceFreezer.text,<i>A victim was found floating in the river a week ago.\nHis body is in the freezer over there.\nThe fishes have not left much to look at!\nI warn you it's not a pretty sight.\n</i>\n{qst:QSTPLACESEARCH}
 EventPlaceSpeakeasyDoor.text,On the door there is a small slot at eye level.\n\n{qst:QSTPLACEEXPLORE}
 EventPlaceSpeakeasyDoor.button1,{qst:QSTCONTINUE}
@@ -220,7 +218,6 @@ TokenHut.text,Inside the hut the rotted table and chairs are damaged.\nThere are
 EventHutSearchStory1.text,There is blood on the table, chairs and walls.\nOn the table is a small pile of ash and a small bottle which is empty but has traces of a strange green liquid.\n\nTest {observation}.
 TokenEastStreetToCorner.button1,{qst:QSTREVEAL}
 EventPlaceHut.button1,{qst:QSTCONTINUE}
-EventPlaceSouthCornerToOffice.button1,{qst:QSTCONTINUE}
 EventPlaceCorner.text,You see a Street Corner.\n\nPlace the {c:TileCorner} {qst:QSTTILE}.
 EventPlaceReporter2.button1,{qst:QSTCONTINUE}
 EventDebrisSearchFail.text,The pile of debris is unstable and the ground is wet and slippery.\nThe ground suddenly shakes and you stumble.\n\nTest ({agility},2)\n\nIf you fail, suffer 1 facedown Damage.
@@ -333,7 +330,6 @@ EventPlaceMainStreetProtestMarch.text,He turns around and waves his crowbar high
 TokenCravenMorgue.text,{qst:QSTCRAVEN}
 TokenCornerToBeach.text,Dirty muddy steps lead down to the Miskatonic River.\n\nYou may only click {qst:QSTREVEAL} if you are in the {c:TileCorner} tile.
 EventPlaceCornerToBeach.text,Dirty muddy steps lead down to the Miskatonic River.\n\n{qst:QSTPLACESIGHT}
-EventPlaceSouthCornerToSouthStreet.text,The street continues.\n\n{qst:QSTPLACESIGHT}
 TokenShopReceipts.button1,{action} Search
 EventPlaceShopTable.button1,{qst:QSTCONTINUE}
 TokenShopReceipts.text,On the table is a jumble of shop receipts.\nBeneath the more recent receipts is a large pottery dish covered in ash.
@@ -353,7 +349,7 @@ EventPoliceKillerMale.text,<i>\nI do remember something odd happened last night.
 TokenSquareToAlley.text,In the direction is an alley.\n\nYou may only click {qst:QSTREVEAL} if you are on the {c:TileSquare} tile.
 TokenOfficeToCorner.button1,{action} Explore
 TokenSquareToShop.text,Above the shop door is a sign,<i>The Curiosity Shop</i>.
-TokenCornerToOffice.button1,{qst:QSTCONTINUE}
+TokenCornerToOffice.button1,{qst:QSTEXPLORE}
 TokenCornerToBeach.button1,{qst:QSTREVEAL}
 EventPlaceBeach.text,Place the {c:TileBeach} {qst:QSTTILE}.
 EventPlaceBeach.button1,{qst:QSTCONTINUE}
@@ -462,7 +458,7 @@ TokenSquareToChapel.button1,{action} Explore
 EventSocietyDoorS1.button1,{action} Explore
 EventSocietyUnlock.button1,{qst:QSTCONTINUE}
 TokenSquareToChapel.text,\nThere is a stained glass window to the left of the door. \nThere is a sign to the right of the door,<i>\nThe Chapel of Saint Michael.\nAll are welcome.</i>
-EventPlaceChapel.text,The chapel is small with a pulprit amd a few rows of pews.\n\nPlace the {c:TileChapel} {qst:QSTTILE}.
+EventPlaceChapel.text,The chapel is small with a pulpit amd a few rows of pews.\n\nPlace the {c:TileChapel} {qst:QSTTILE}.
 EventPlaceShopDisplay.button1,{qst:QSTCONTINUE}
 EventShopDisplayStory2.button1,{qst:QSTCONTINUE}
 EventExhibitStory2.button1,{qst:QSTCONTINUE}
@@ -534,7 +530,7 @@ EventManholeCrowbarFound.button2,{qst:QSTCANCEL}
 EventIncriminatingS1.button1,{qst:QSTCONTINUE}
 EventIncriminatingS2.text,You have evidence Police Officer Walker is handling stolen goods.
 EventIncriminatingS1.text,You have evidence Police Officer Walker is taking kickbacks from the Sheldon Gang.\nHe is, also, fencing stolen goods including items he has confiscated as part of his investigations.
-EventLolaPipes.text,Lola Santiago says,<i>\nThe pipes belong to my people, the Misqat tribe.\nMy people have lived in the Miskatonic Valley for many centuries.\nThey were carved by the medicine man, Chindah.\nHe used them to call to the spirits of his ancestors and drive away a malignant demon called the Lliogar.</i>
+EventLolaPipes.text,Lola Santiago says,<i>\nThe pipes belong to my people, the Misqat tribe.\nMy people have lived in the Miskatonic Valley for many centuries.\nThey were carved by the medicine man, Chindah.\nHe used them to call to the spirits of his ancestors and drive away a malignant demon called the Lloigar.</i>
 EventLolaPipes.button1,{qst:QSTCONTINUE}
 EventPlaceSewerAltar.button1,{qst:QSTCONTINUE}
 EventIncriminatingS2.button1,{qst:QSTCONTINUE}
@@ -578,11 +574,11 @@ EventArrestSuspect1.button2,No, I'm not sure.
 EventArrestSuspect2.text,Are you sure I should arrest {qst:QSTNAOMI}?
 EventArrestSuspect2.button1,Yes, I'm sure.
 EventArrestSuspect2.button2,No, I'm not sure,
-EventArrestSuspect3.text,Are you sure I should arrest Lola Santiago?
+EventArrestSuspect3.text,Are you sure I should arrest {qst:QSTLOLA}?
 EventArrestSuspect3.button1,Yes, I'm sure.
 EventArrestSuspect3.button2,No, I'm not sure.
 EventArrestSuspect4.text,Are you sure I should arrest {qst:QSTPOLICE}?
-EventArrestSuspect4.button1,Yes, 1'm certain.
+EventArrestSuspect4.button1,Yes, I'm certain.
 EventArrestSuspect4.button2,No, I'm not sure.
 EventArrestSuspect5.text,Are you sure I should arrest {qst:QSTEDITOR}?
 EventArrestSuspect5.button1,Yes, I'm sure.
@@ -590,6 +586,9 @@ EventArrestSuspect5.button2,No, I'm not sure.
 EventArrestSuspect6.text,Are you sure I should arrest {qst:QSTPROFESSOR}?
 EventArrestSuspect6.button1,Yes, I'm sure.
 EventArrestSuspect6.button2,No, I'm not sure.
+EventArrestSuspect7.text,Are you sure I should arrest {qst:QSTPRIEST}?
+EventArrestSuspect7.button1,Yes, I'm sure.
+EventArrestSuspect7.button2,No, I'm not sure.
 EventArrestSuspect8.text,Are you sure I should arrest {qst:QSTBERTIE}?
 EventArrestSuspect8.button1,Yes, I'm sure.
 EventArrestSuspect8.button2,No, I'm not sure.
@@ -629,16 +628,16 @@ SpawnWizard.text,Spawn the Wizard Monster as indicated.
 TokenSadieRitual.button1,{qst:QSTCONTINUE}
 EventRitualK1.button1,{qst:QSTCONTINUE}
 EventRevealKiller.button1,{qst:QSTCONTINUE}
-SpawnLloigor.text,Skeleton after skeleton rise up into the air and disintegrate.\nA giant shape appears out of the churning maelstrom as bits of bone and fish join and fuse together.\nThe Lliogar has created a new physical body!\n\nSpawn a Lloigor Monster as indicated.
+SpawnLloigor.text,Skeleton after skeleton rise up into the air and disintegrate.\nA giant shape appears out of the churning maelstrom as bits of bone and fish join and fuse together.\nThe Lloigar has created a new physical body!\n\nSpawn a Lloigor Monster as indicated.
 EventRitualK5S1.button1,{qst:QSTCONTINUE}
 SpawnLloigor.button1,{qst:QSTCONTINUE}
 SpawnWizard.button1,{qst:QSTCONTINUE}
 SpawnPriestOfDagonWizard.button1,{qst:QSTCONTINUE}
-EventRitualK1.text,Beneath the hood is Sadie Sheldon.\nShe takes a drink from a small green bottle.\nShe shouts out,<i>\nAt last the Lliogor will give me power beyond my dreams.\nSure, I had to kill Duncan and that low-life Bugs\nbut they shouldn't have got in my way!\nThe only person I regret killing is my father.\nAge had made him weak and foolish!\n</i>\nSuddenly, she screams as her body transforms.
+EventRitualK1.text,Beneath the hood is Sadie Sheldon.\nShe takes a drink from a small green bottle.\nShe shouts out,<i>\nAt last the Lloigor will give me power beyond my dreams.\nSure, I had to kill Duncan and that low-life Bugs\nbut they shouldn't have got in my way!\nThe only person I regret killing is my father.\nAge had made him weak and foolish!\n</i>\nSuddenly, she screams as her body transforms.
 EventRitualWaterspout.text,A waterspout forms in the Miskatonic River.\nThe waters of the river churn and toss.\nThe high winds pulls the sacrifice into the air.\nIncredibly high winds knock you off your feet as fish fall from the sky and land flapping and gasping in the street.\nBlood, bits of bones and fish fall like rain.\nSkeletons rise up out of the water.
 SpawnKillerChildOfDagon.text,Spawn a Child of Dagon Monster as indicated.
 EventRevealKillerShort.text,A figure wearing loose fitting robes covering the whole of the body emerges from the shack.\nThe figure is roughly the same height as Naomi O'Bannion.\nThe figure pulls back their hood.
-EventRitualK2.text,Beneath the hood is Naomi O'Bannion.\nShe takes a drink from a small green bottle.\nShe shouts out,<i>\nAt last the Lliogor will crush all who dare to oppose me.\nI will take over Arkham and, then, Chicago!\nSure I had to kill Duncan and a few others as well,\nbut you can't make an omelette without breaking eggs.\n</i>\nSuddenly, she screams as her body transforms.
+EventRitualK2.text,Beneath the hood is Naomi O'Bannion.\nShe takes a drink from a small green bottle.\nShe shouts out,<i>\nAt last the Lloigor will crush all who dare to oppose me.\nI will take over Arkham and, then, Chicago!\nSure I had to kill Duncan and a few others as well,\nbut you can't make an omelette without breaking eggs.\n</i>\nSuddenly, she screams as her body transforms.
 EventRitualK3.text,Beneath the hood is Lola Santiago.\nShe takes a drink from a small green bottle.\nShe shouts out,<i>\nAt last my people will have their vengeance!\nArkham will be wiped from face of the earth!\n</i>\nSuddenly, she screams as her body transforms.
 EventRitualK3.button1,{qst:QSTCONTINUE}
 EventRitualK2.button1,{qst:QSTCONTINUE}
@@ -680,7 +679,7 @@ EventPrintersDefault.button1,{qst:QSTCONTINUE}
 EventSocietyDoorDefault.button1,{qst:QSTCONTINUE}
 EventShopDefault.text,The shop is closed.
 EventShopDefault.button1,{qst:QSTCONTINUE}
-EventSpeakeasyDefault.text,The slat in the door slides open and a pair of eyes peer out at you through the open slot.\nYou hear a threatening voice behind the door, <i>\nWe're closed!\nGet lost!</i>
+EventSpeakeasyDefault.text,The slat in the door slides open and a pair of eyes peer out at you through the open slot.\nYou hear a threatening voice behind the door, <i>\nWe're closed!</i>
 EventRitualK6.button1,{qst:QSTCONTINUE}
 EventEndRoundSpawnProtest.button1,{qst:QSTCONTINUE}
 EventMainStreetToSquare.text,Shouting comes from the Town Square to the North.\n\n{qst:QSTPLACESIGHT}\n\nThe man hears the shouting and hurries away.
@@ -689,8 +688,6 @@ EventReporter2.button2,{qst:QSTCANCEL}
 EventReporterTalkStory1.text,She says,\n<i>There was something I couldn't tell you in front of Walker.\nHe can't be trusted.\nI think he's in the pay of the Sheldon gang.</i>
 EventReporterTalkStory2.text,She says,\n<i>There was something I couldn't tell you in front of Walker.\nDuncan is convinced Walker is a dirty cop who sells impounded whiskey and tobacco.\nDuncan persuaded the commissioner to implement tighter controls on the storage of confiscated evidence.\nWalker is getting into the smuggling business to expand his supply.\nThe O'Bannion gang protects its turf.\nThere's going to be trouble between Walker and Naomi.</i>
 quest.synopsys,There is a crime wave in Arkham.  Is the notorious O'Bannion gang to blame?
-EventArrestSuspect7.text,Are you sure I should arrest {qst:QSTPRIEST}?
-EventArrestSuspect7.button1,Yes, 1'm sure.
 EventSolveMystery.button8,Arrest {qst:QSTBERTIE}
 EventRitualBegin.button1,{qst:QSTCONTINUE}
 UIBikerGirl.button1,{qst:QSTCONTINUE}
@@ -703,7 +700,6 @@ EventPipesChindah.button1,{qst:QSTPASS}
 EventSpeakeasyAnswerNaomi.text,The door opens a crack.\nA threatening voice says,<i>\nNaomi O'Bannion ain't popular around here.\nHere's a message for her.\nA thug throws a sucker punch at your face.\n</i>\nTest ({{agility},2}.
 EventCravenBusy.text,After a while Agent Craven comes to the phone.\nYou go through the progress you've made.\nHe says,<i>\nYou haven't found enough for me to return to Arkham and arrest the killer.\nKeep looking!\nFocus on means, motive and opportunity.</i>
 EventCravenBusy.button1,{qst:QSTCONTINUE}
-EventArrestSuspect7.button2,No, I'm not sure.
 EventTelephoneCravenBusy.button1,{action}<i> Please get him.  It's urgent!</i>
 EventCravenAwait.text,You return to the Police Station to shelter from the storm.\nWhile waiting for Agent Craven to arrive, \nyou have a chance to rest.\n\nEach investigator may discard either 1 Damage or 1 Horror.
 EventCravenReturns.button1,{qst:QSTCONTINUE}
@@ -772,7 +768,7 @@ EventPipesSpecialRule.button1,{qst:QSTCONTINUE}
 EventPipesInvokeSpirit.button1,{action} Play the pipes.
 UIFinaleLloigorText.uitext,The Lloigor is not a creature of this earth.\nUnable to maintain its new physical shape,\nits destruction is sudden and total.\n It implodes into itself in a maelstrom of bones, claws, fish scales and giant teeth.\nThe whirlwind dissapates.\n
 UIFinalePoliceButton.uitext,Next
-UIFinaleIndianText.uitext,Your slumbers are interrupted by a dream of a medicine man holding a spirit chaser stick above his head and driving back the malign influence of the Lloigor.\nYou awake to find you're holding the {c:QItemPipes} and hearing distant haunting music.\nIn the morning, you feel compelled to return the relic to the people it belongs to.\nAfter several days of research, you discover the descendants of Chindah were driven out of the Miskatonic Valley.\nYou track down Eagle Feather, the last remaining relative of Chindah, living deep in the desert.\nWhen you hand him the pipes, he's grateful but he does not seem surprised.\nHe carries out a ritual to purify the relic and remove any trace of the corrupting influence of the Lloigor.\n
+UIFinaleIndianText.uitext,Your slumbers are interrupted by a dream of a medicine man holding a spirit chaser stick and driving back the malign influence of the Lloigor.\nYou awake to find you're holding the {c:QItemPipes} and hearing distant haunting music.\nIn the morning, you feel compelled to return the relic to the people it belongs to.\nAfter several days of research, you discover the descendants of Chindah were driven out of the Miskatonic Valley.\nYou track down Eagle Feather, the last remaining relative of Chindah, living deep in the desert.\nWhen you hand him the pipes, he's grateful but he does not seem surprised you have come.
 EventRitualBertie.text,You rush out into the street.\n\nPlace all investigators as indicated.
 EventBilliardsEntry.button3,{qst:QSTCANCEL}
 EventRitualBertie.button1,{qst:QSTCONTINUE}
@@ -1273,7 +1269,7 @@ EventBike.button1,Talk to Kathleen.
 TokenHut.button1,{qst:QSTSEARCH}
 UIFinalePoliceText.uitext,Police cars, fire engines and ambulances arrive from the Newport District.\nYou leave Agent Craven to deal with them.\nAs soon as you get home,  you collapse exhausted on your bed.\nYou fall into a deep sleep.
 UIFinaleIndianButton.uitext,{qst:QSTCONTINUE}
-UIFinaleDesertText.uitext,You walk away through the desert, listening to the fading haunting sound of the traditional pipes, confident Chindah will be watching over Eagle Feather and the Misqat tribe.\n
+UIFinaleDesertText.uitext,Eagle Feather carries out a ritual to purify the relic and remove any trace of the corrupting influence of the Lloigor.\nYou walk away through the desert, listening to the fading haunting sound of the traditional pipes, confident Chindah will be watching over Eagle Feather and the Misqat tribe.\nTogether, Chindah and Eagle Feather will prevent the return of the Lloigar.
 PuzzleMissingLinkEasyS1.button1,Read clippings.
 PuzzleMissingLinkHardS1.button1,Read clippings.
 PuzzleMissingLinkEasyS2.button1,Read clippings.
@@ -1296,7 +1292,7 @@ EventPlaceAlleyToSpeakeasy.button1,{qst:QSTCONTINUE}
 EventSpeakeasyEntryS1.button1,{action}<i> I'm a high stakes gambler.</i>
 EventSadieAlibi.button1,{qst:QSTCONTINUE}
 EventFlapperSadie.text,The flapper says,<i>\nBertie don't appreciate me.\nLast night, he spent hours talking and drinking at Sadie Sheldon's speakeasy.\nHe ought to treat me better.\n</i>\nGain 1 {clue}.
-EventSpeakeasyEntryS2.text,The slat in the door slides open.\nA pair of eyes peer out at you through the open slot.\nYou hear a threatening voice behind the door, <i>\nWe're closed!\n</i>\nWhen you don't immediately step back the door opens a crack and an angry thug shouts in your face,\nGet lost!</i>
+EventSpeakeasyEntryS2.text,The slat in the door slides open.\nA pair of eyes peer out at you through the open slot.\nYou hear a threatening voice behind the door, <i>\nWe're closed!\n</i>\nWhen you don't immediately step back the door opens a crack and an angry thug shouts in your face,\n<i>Get lost!\nScram!</i>
 EventSpeakeasyEntryS2.button1,{action} Push the door open.
 EventBertieSadie.button1,{qst:QSTCONTINUE}
 EventBertieLeaves.button1,{qst:QSTCONTINUE}
@@ -1449,7 +1445,7 @@ EventReporterPoliceCigar.text,She shows you pictures of him in his office.\nIn a
 EventReporterPoliceCigar.button1,{qst:QSTCONTINUE}
 EventPsychicAttackPassSpellA.text,You realise you're the target of a powerful psychic attack.\nYou gain new insight.\n\nGain the {c:QItemSuggestionSpell} Spell.
 EventPsychicAttackPassSpellB.button1,{qst:QSTCONTINUE}
-EventFlapperLuckyRoll.text,The flapper looks over at the dice rolled on table.\nShe cries out,<i>\nHey, your first dice roll is {var:LuckyRoll}.\nBertie, don't Naomi say {var:LuckyRoll} rolled first is a sign lady luck is gonna change!\n
+EventFlapperLuckyRoll.text,The flapper looks over at the dice rolled on table.\nShe cries out,<i>\nHey, your first dice roll is {var:LuckyRoll}.\nBertie, don't Naomi say {var:LuckyRoll} rolled first is a sign lady luck is gonna change!\n	 Maybe your run of luck is gonna run out!\n</i>
 EventReporterHintChapel.text,<i>It seems likely that Duncan has been murdered.\nHe was going to meet me at the Chapel of Saint Michael's.</i>
 EventReporterHintChapel.button1,{qst:QSTCONTINUE}
 EventPipesChindahStory1.text,The spirit of Chindah appears,\n<i>I see a spirit passing through the happy hunting grounds to a place beyond.\nHis name is Duncan.\nHe says he was ambushed in the storm drain by a robed figure.\nHe says Professor Smith is innocent.\nHe says Bertie is a servant of the Lloigor sent by the foul demon to help the killer.\n</i>\nIf you do not have a {clue}, gain 1 {clue}.\nYou may spend 1 {clue} to become Righteous.\nYou may spend 1 {clue} to take an additional action.
@@ -1541,4 +1537,8 @@ EventReporterHintTalk.button1,{qst:QSTREPORTERHINT}
 EventReporterHintTalk.button2,{qst:QSTNEVERMIND}
 TokenBike.button1,Button1
 EventReporterHintTalk.text,Kathleen Ross\n\nThis turn you may ask Kathleen to give a quick hint once during the turn.\nThis does not cost an Action.
-,
+EventPlaceCornerToOffice.text,A door is labelled,<i>\nPolice Office</i>\n\n{qst:QSTPLACEEXPLORE}
+EventPlaceCornerToOffice.button1,{qst:QSTCONTINUE}
+EventPlaceCornerToEastStreet.text,The street continues.\n\n{qst:QSTPLACESIGHT}
+EventPlaceCornerToEastStreet.button1,{qst:QSTCONTINUE}
+UIFinaleWrongKillerText.uitext,You dreams are disturbed by visions of the Lloigor.\nYou hear its cries coming from afar.\nYou have destroyed the physical body of the demonic creature but the killer completed the ritual summoning.\nYou have won but your victory is temporary.\nIn time the demonic entity will regain its strength.\nIt will, one day, use its malign influence on the benighted town of Arkham to find someone willing to serve it.\nYou pray there will be someone ready and able to destroy it once and for all.
