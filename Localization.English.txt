@@ -124,7 +124,6 @@ TokenTestVariables.button1,Button1
 EventPlaceSpeakeasy.text,The door swings open, revealing a speakeasy which is nearly empty.\n\nPlace the {c:TileSpeakeasy} {qst:QSTTILE}.
 EventPlaceSpeakeasy.button1,{qst:QSTCONTINUE}
 EventPlaceAlley.text,The alley is deserted.\n\nPlace the {c:TileAlley} {qst:QSTTILE}.
-EventPlaceBouncerTalk.button1,{qst:QSTPASS}
 EventPlaceAlleyToSpeakeasy.text,There is a non-descript solid metal door.\n\n{qst:QSTPLACEEXPLORE}
 SpawnHitmanAlley.text,A hit has been taken out on you. \n\nSpawn a Hired Gun Monster as indicated.\n\nIs an investigator in range of this monster?\n
 EventForensicBodyIsBugs.text,The note is spattered in blood but you can still read the following words written in block capitals.\n\nI AM DISAPPOINTED BY YOUR DEMAND FOR MORE MONEY BUT YOU WILL GET YOUR REWARD ON MONDAY.\nI WILL COME ALONE.\n\nFrom the sharp cut of his expensive suit and his white shoe spat, you infer he was a gangster.
@@ -269,7 +268,6 @@ EventReporter2.button1,<i>{action} How can you help?</i>
 EventGainBike.button1,{qst:QSTCONTINUE}
 EventPlaceReporter2.text,{qst:QSTREPORTER} sits astride her old motorcycle.
 EventBike.text,The Yellow Woman Token on the board now represents the reporter on her bike.\nNote: the position of the Yellow Woman token will no longer be displayed on the app.  \n\nIf you are in range of the token, you may spend an Action or a Clue to move her up to {var:maxBikeMove} spaces.\nShe may only move on Street and Alley spaces.\nShe may move at most two times during the entire Investigator Phase.\nIf your figure is in the same space\n(whenever she starts her movement),\nyou may move your figure with her.\n\nNormal evade rules apply to the investigator during the move.
-EventBouncerTalk.button1,{qst:QSTSADIEBERTTALK}
 EventGainBike.text,Kathleen Ross says,<i>\nBecky, my bike, is small but she can carry a passenger.</i>\n\n<b>The rules for the use of the motorbike can be read by clicking on the 'Items' button and clicking on the picture of the motorbike item.\nAlternatively, click on the Yellow Woman token.</b>
 EventStealLedger.button3,Two {success}
 TokenDealer2.button1,{qst:QSTCONTINUE}
@@ -429,10 +427,6 @@ EventMissingLinkTall.button1,{qst:QSTCONTINUE}
 TokenStreetToBilliards.text,Above the door is sign\n<i>Billiards Hall - Members Only Club</i>.\n\nYou hear the low muttering of people talking coming from behind the doorway.
 EventPlaceSadie.text,The woman is sitting at a table, calmly smoking a cigar.\nShe's middle-aged and of average height for a woman.\nOn a table in front of her is an ashtray full of cigar butts.
 EventPlaceWhiskey.button1,{qst:QSTCONTINUE}
-EventPlaceBouncerTalk.text,You say,<i>\nDid your little birdie tell you the Feds are in town!\nDo you want to mess with the Feds!\n</i>\nTest either ({influence},2) or  ({strength},2)
-EventBouncerFight.text,The bouncer takes a swing and you try to dodge his round-house punch.\n\nTest ({agility},2) 
-EventBouncerFightFail.text,The bouncer's blow hits you hard.\n\nSuffer 2 Damage.
-EventBouncerDodge.text,You dodge the punch and while he's off balance grab the gun in his holster.\n\nGain the {c:QItem45Revolver} Item.
 EventSpeakeasyEntry.button1,{qst:QSTCONTINUE}
 EventSpeakeasyEntryS1.button2,{action} <i>I know {qst:QSTBERTIE}.</i>
 EventSpeakeasyEntryS1.button3,{action} <i>I know {qst:QSTNAOMI}.</i>
@@ -445,12 +439,6 @@ EventSpeakeasyDefault.button1,{qst:QSTCONTINUE}
 EventGainSnubnose.text,Everyone is so distracted, it's like stealing candy from a baby.\nYou pick up the small gun on top of the ledger.\n\nYou gain the {c:QItemSnubnose} Item.
 EventDefeatedDealer.text,The gangster falls to the floor unconscious.\n\nPlace the {c:QItemSnubnose} Item in the space he was in.
 EventDefeatedDealer.button1,{qst:QSTCONTINUE}
-EventBouncerDodge.button1,{qst:QSTCONTINUE}
-EventBouncerFight.button2,{qst:QSTFAIL}
-EventPlaceBouncerTalk.button2,{qst:QSTFAIL}
-EventBouncerFight.button1,{qst:QSTPASS}
-EventBouncerFightFail.button1,{qst:QSTCONTINUE}
-TokenBouncer2.button1,Button1
 TokenAlleyToSpeakeasy.text, On the door is a small slot at eye level, allowing someone inside to look out.\nThe door is locked.
 EventSocietyDoorS1.text,There is a sign next to the door,\n<i>\nArkham Historical Society.\nThe Society is closed.</i>
 EventGainOldKeys.button1,{qst:QSTCONTINUE}
@@ -1384,7 +1372,7 @@ EventRescueInfluence.button1,{qst:QSTCONTINUE}
 SpawnKillerThrall.text,Spawn a Thrall Monster as indicated.
 SpawnKillerChildOfDagon.button1,{qst:QSTCONTINUE}
 SpawnKillerThrall.button1,{qst:QSTCONTINUE}
-EventBertieSpell.text,Clasped in his right hand is a large battered tome bound in a light colored leather.\nHe reads a short unpronounceable spell from the book.\nA powerful gust of wind hits you.\n\nAll investigators test (; 2).\nIf you pass, you weather the unrelenting force.\nIf you fail, you are knocked off your feet and flung backwards against the wall of the police station; suffer 2 Damage and become Dazed.
+EventBertieSpell.text,Clasped in his right hand is a large battered tome bound in a light colored leather.\nHe reads a short unpronounceable spell from the book.\nA powerful gust of wind hits you.\n\nAll investigators test ({strength}; 2).\nIf you pass, you weather the unrelenting force.\nIf you fail, you are knocked off your feet and flung backwards against the wall of the police station; suffer 2 Damage and become Dazed.
 EventRescueGrabBoy.text,The high winds are throwing debris around and makes catching the boy difficult.\n\nSelect one investigator to test {agility}.\nThe investigator may suffer 1 facedown Damage to roll an additional die.\nThe investigator may suffer 1 Damage to reroll one die. 
 SpawnPriestOfDagonWizard.text,Spawn a Priest of Dagon Monster as indicated.
 EventRescueThunder.text,A crash of thunder causes the dog to flee in terror.
@@ -1466,12 +1454,6 @@ EventGamblersNaomi.button1,{qst:QSTCONTINUE}
 EventGamblersDefault.text,The group of tough looking guys ignore you.
 EventGamblersDefault.button1,{qst:QSTCONTINUE}
 EventGamblersTalk.button2,{qst:QSTNEVERMIND}
-EventBouncerTalkBertie.button1,{qst:QSTCONTINUE}
-EventBouncerTalk.text,The guy stands behind the bar slowly polishing a glass.\nHe scowls at you.
-EventBouncerDefault.text,The guy behind the bar scowls at you.
-EventBouncerTalkBertie.text,The guy scowls at you and says,<i>\nI wouldn't trust Bertie as far as I could throw him.\nHe messes with all kinds of dangerous hocus-pocus.\nIf you're a friend of his, you're even dumber than you look!</i>
-EventBouncerDefault.button1,{qst:QSTCONTINUE}
-EventBouncerTalk.button2,{qst:QSTNEVERMIND}
 EventHitmanMoveOneSpace.button2,No
 EventPlaceSocietyBarricade.text,Next to the door is a display case.\nIt could be moved to block the door.\n\nPlace a Barricade token as indicated.
 EventPlaceSocietyBarricade.button1,{qst:QSTCONTINUE}
@@ -1503,7 +1485,7 @@ EventReporterSadieShindig.button1,{qst:QSTCONTINUE}
 EventReporterSadieShindig.text,<i>Sadie's shindig was at her main speakeasy, the Rough and Tumbler.\nIt's across the river and way the other side of town.\nI hoped to get a scoop.\nI made sure to keep a close eye on Sadie all night.\nBertie Bingham tried to charm everyone but no one was fooled by his shtick.\nBertie even made a pass at me.\nI felt hypnotised before I snapped out of it.\nSadie found it hilarious when I told him to go screw himself.\nSadie just puts up with Bertie because he's acting as a go-between.\nSadie wants to avoid another gang war.\nBertie is more dangerous than he looks,\nI noticed when he left late that night, a flapper girl left with him.\nShe seemed to be under his spell.</i>
 EventMissingLinkS2Articles.text,<b>1. Is Naomi a Witch?</b>\nRecently, Naomi took over leadership of the O'Bannion gang.\nThere is a rumour she used black magic to kill the previous popular leader.\nIf true, the O'Bannion gang will turn on her.\n\n<b>2. Local Shopkeeper Arrested</b>\nLast week, Lola Santiago, the owner of the Curiosity Shop, was arrested by Police Officer Walker on suspicion of theft and handling stolen goods.\nShe was released with all charges dropped.\n\n<b>3. Police Officer Given Final Warning</b>\nLast week, Walker was given a final warning by the Police Commissioner for professional misconduct.\nLola Santiago is organising a protest demanding his resignation.\n\n<b>4. Historical Society Haunted</b>\nPassers-by have claimed the building is haunted.\nSome have heard an eerie piping sound disturb the quiet of the night.\n\n<b>5. Historical Society Scandal!</b>\nThere are rumors of financial irregularities and valuable relics and tomes have gone missing.\nThe Trustees of the Society have announced they will soon be carrying out a full investigation.
 EventRitualK5S1.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\nHe shouts out,<i>\nBugs shouldn't have stolen the relic and, then, refused to give it back.\nHe shouldn't have attacked me at the hut.\nHe deserved to die and I'm grateful the Lloigor helped me kill him.\nI'm sorry Duncan died but he wouldn't stop digging and the Lloigor needed another sacrifice!\nSoon I will be strong enough to kill all the O'Bannion thugs.\n\n</i>Suddenly, he screams as his body transforms.
-EventRitualK5S2.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\nHe shouts out,<i>\nThe Bone Pipes belong to me.\nColonel Johnson was my distant ancestor.\nThe security guard deserved to die and I'm grateful the Lloigor helped me kill him.\nI'm sorry Duncan died but he wouldn't stop digging and the Lloigor needed another sacrifice!\n\n</i>Suddenly, he screams as his body transforms.
+EventRitualK5S2.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\nHe shouts out,<i>\nThe Bone Pipes belong to me.\nColonel Kane was my distant ancestor.\nThe security guard deserved to die and I'm grateful the Lloigor helped me kill him.\nI'm sorry Duncan died but he wouldn't stop digging and the Lloigor needed another sacrifice!\n\n</i>Suddenly, he screams as his body transforms.
 EventSadieNaomiStory1Killer1or2or4.text,<i>I had my boys bring Bugs here to explain I don't like trouble.\nSoon after he was arrested by Police Officer Walker.\nNaomi thinks I ratted him out but Bugs brought the heat upon himself.\nBugs was soon released.\nMaybe Walker messed up another investigation or maybe Naomi pulled a few strings.\nThe word on the street is Bugs is taking it on the lam.\n</i>
 EventLolaPipesStory1Killer3or4.button1,{qst:QSTCONTINUE}
 EventLolaPipesStory1Killer2or3or5.text,<i>A month ago, a mobster called Bugs O'Flanagan came to my shop and demanded money in return for protection.\nFortunately, John Johnson, was there and told him to clear off.\nBugs flew into a rage, picked up the box and threw it to the ground.\nIt burst open, revealing the pipes.\nThe pipes started to make an eerie whistling noise.\nSoon after, the box was stolen.\nI caught a glimpse of the thief as he ran off and I'm sure it was Bugs.\nJohn Johnson promised to retrieve the relic whatever the cost.\n</i>\nGain 1 {clue}.
@@ -1523,10 +1505,10 @@ EventMissingLinkS1ArticlesA.text,<b>1. Is Naomi a Witch?</b>\nRecently, Naomi to
 EventMissingLinkS1ArticlesB.button1,{qst:QSTCONTINUE}
 EventRescuePassCheck.button1,Button1
 EventPriestDuncanMore.text,Holding the bible in your hands gives you a new sense of purpose.\nYou fear Police Officer Duncan was murdered by the killer and you are resolved to bring the killer to justice.\n\nYou may spend 1 {clue} to take an additional action.
-EventPriestDuncanMore.button1,Continue
+EventPriestDuncanMore.button1,{qst:QSTCONTINUE}
 UIIntroText1.uitext,It's a quiet Sunday.\nYou were looking forward to a lazy afternoon, until you read the Arkham Gazette.\nTwo bodies found within a week and both missing bones.\nYour thoughts are interrupted by the ringing of your telephone.<i>\nI'm Agent Craven of the FBI.\nYou've a reputation for dealing with the strange things that go on in Arkham County.\nAnother body washed up on the banks of the Miskatonic.\nI don't think it's the usual gangland killings.\nIf you're interested, meet me at Arkham Morgue on the Main Street of the old Southside District.\n</i>\n
 UIIntroText2.uitext,You take a walk over the Newport bridge across the mighty Miskatonic river.\nAfter a while, you reach the historic Southside District.\nThis area is the oldest part of Arkham.\nIt's an area of town you're not fully familiar with.\nThere's no direct bridge and, if you happen to visit, it's usually to quickly pass through its dark streets, overlooked by crumbling huddled buildings, on the way to somewhere else.
-UIIntroButton2.uitext,Continue
+UIIntroButton2.uitext,{qst:QSTCONTINUE}
 EventRitualShaman.text,The spirit of the Misqat shaman appears next to you.\nHe raises his ghostly spirit stick and points it towards the {c:QItemPipes}.
 EventSpawnBertie.text,Bertie Bingham is standing by the riverside.\nHe chants an invocation in Latin,\n<i>O magne unum.\nAc totum corpus habent.\nEx veni ultra!\nLloigor!  Lloigor!  Lloigor!\n</i>
 EventSpawnBertie.button1,{qst:QSTCONTINUE}
@@ -1542,3 +1524,47 @@ EventPlaceCornerToOffice.button1,{qst:QSTCONTINUE}
 EventPlaceCornerToEastStreet.text,The street continues.\n\n{qst:QSTPLACESIGHT}
 EventPlaceCornerToEastStreet.button1,{qst:QSTCONTINUE}
 UIFinaleWrongKillerText.uitext,You dreams are disturbed by visions of the Lloigor.\nYou hear its cries coming from afar.\nYou have destroyed the physical body of the demonic creature but the killer completed the ritual summoning.\nYou have won but your victory is temporary.\nIn time the demonic entity will regain its strength.\nIt will, one day, use its malign influence on the benighted town of Arkham to find someone willing to serve it.\nYou pray there will be someone ready and able to destroy it once and for all.
+EventBibleStory2More.text,<i>{qst:QSTPROFESSOR} might not be the upstanding citizen he appears to be.\n{qst:QSTNAOMI} made several visits to the museum.\nThe Professor is friends with a member of the Sheldon gang, Tony Zavaroni.\n\n{qst:QSTEDITOR} made frequent visits to the {qst:QSTSOCIETY} to check up on his family tree.\nHe is keeping the visits secret because he believes a distant ancestor of his has a notoriously dark past.</i>
+EventBibleStory2More.button1,{qst:QSTCONTINUE}
+TokenBouncer2.button1,Button1
+EventPlaceBouncerTalk.text,You say,<i>\nDid your little birdie tell you the Feds are in town!\nDo you want to mess with the Feds!\n</i>\nTest either ({influence},2) or  ({strength},2)
+EventPlaceBouncerTalk.button1,{qst:QSTPASS}
+EventPlaceBouncerTalk.button2,{qst:QSTFAIL}
+EventBouncerFight.text,The bouncer takes a swing and you try to dodge his round-house punch.\n\nTest ({agility},2) 
+EventBouncerFight.button1,{qst:QSTPASS}
+EventBouncerFight.button2,{qst:QSTFAIL}
+EventBouncerFightFail.text,The bouncer's blow hits you hard.\n\nSuffer 2 Damage.
+EventBouncerFightFail.button1,{qst:QSTCONTINUE}
+EventBouncerDodge.text,You dodge the punch and while he's off balance grab the gun in his holster.\n\nGain the {c:QItem45Revolver} Item.
+EventBouncerDodge.button1,{qst:QSTCONTINUE}
+QSTKNOWBERTIE,{action} Do you know {qst:QSTBERTIE}?
+QSTKNOWPROF,{action} Do you know {qst:QSTPROFESSOR}?
+QSTBOUNCERDEFAULT,The guy stands behind the bar slowly polishing a glass.\nHe scowls at you.
+EventBouncerTalk.text,{qst:QSTBOUNCERDEFAULT}
+EventBouncerTalk.button1,{qst:QSTSADIEBERTTALK}
+EventBouncerTalk.button2,{qst:QSTNEVERMIND}
+EventBouncerTalkBertie.text,The guy scowls at you and says,<i>\nI wouldn't trust Bertie as far as I could throw him.\nHe messes with all kinds of dangerous hocus-pocus.\nIf you're a friend of his, you're even dumber than you look!</i>
+EventBouncerTalkProf.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe're not friends but we keep in touch.\nWe served together in the Great War.\nWe saw things we ain't gonna forget.\nI'm tough but some don't come back the same - if you know what I mean! 
+EventBouncerTalkProf.button1,{qst:QSTCONTINUE}
+EventBouncerTalkProfAlibi.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe keep in touch because he was my lieutenant in the Great War.\nHe was badly wounded.\nI helped drag him back to the lines.\nThis year his wound had started to play up again.\nHe can barely lift up a shovel.\nLast week, I visited him in the big hospital across the river.\nHe had a large piece of shrapnel removed from his shoulder.\nHe was discharged early this morning.</i>\n\n{qst:QSTGAINCLUE}
+EventBouncerTalkProfAlibi.button1,{qst:QSTCONTINUE}
+EventBouncerTalkBertie.button1,{qst:QSTCONTINUE}
+EventBouncerTalk_Bertie_Prof.text,{qst:QSTBOUNCERDEFAULT}
+EventBouncerTalk_Bertie_Prof.button1,{qst:QSTKNOWBERTIE}
+EventBouncerTalk_Bertie_Prof.button2,{qst:QSTKNOWPROF}
+EventBouncerTalk_Bertie_Prof.button3,{qst:QSTNEVERMIND}
+EventBouncerTalk_Bertie.text,{qst:QSTBOUNCERDEFAULT}
+EventBouncerTalk_Bertie.button1,{qst:QSTKNOWBERTIE}
+EventBouncerTalk_Bertie.button2,{qst:QSTNEVERMIND}
+EventBouncerTalk_Prof.text,{qst:QSTBOUNCERDEFAULT}
+EventBouncerTalk_Prof.button1,{qst:QSTKNOWPROF}
+EventBouncerTalk_Prof.button2,{qst:QSTNEVERMIND}
+EventBouncerDefault.text,{qst:QSTBOUNCERDEFAULT}
+EventBouncerDefault.button1,{qst:QSTCONTINUE}
+QSTAUTOPSYFAIL,The autopsy of the bodies is mess+y and hard but you are close to success.
+EventSlabExamineFail.text,{qst:QSTAUTOPSYFAIL}
+EventSlabExamineFail.button1,{qst:QSTCONTINUE}
+EventFreezerSearchFail.text,{qst:QSTAUTOPSYFAIL}
+EventFreezerSearchFail.button1,{qst:QSTCONTINUE}
+EventBrandProfessorAlibi.text,You recall the gangster, Tony Zavaroni, claims the Professor was in hospital and was discharged early this morning.
+EventBrandProfessorAlibi.button1,{qst:QSTCONTINUE}
