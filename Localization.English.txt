@@ -1,7 +1,7 @@
 .,English
 quest.name,Arkham Crime Wave (v2.4)
 quest.authors_short,Nicola Zee
-quest.description,Arkham Crime Wave\n\nAn article in the Sunday newspaper catches your eye,\n <i>Arkham Crime Wave</i>.\nTwo murder victims in a week and both missing several bones.\nEven for Arkham, that is unusual.\nThe writer of the article, Kathleen Ross, claims the town is sinking into a cesspit of crime.\nA editorial comment by John Johnson blames the notorious O'Bannion gang.\n\nSpecial Notes\n\nArkham Crime Wave is a murder mystery.\nThe key evidence can be checked by examining items but\nnote-taking is recommended.\nIt is a sequel to the FFG scenario Gangs of Arkham.\nYou do not have to play Gangs of Arkham before playing.\nLike Gangs of Arkham, there is some 1920's slang.
+quest.description,Arkham Crime Wave\n\nAn article in the Sunday newspaper catches your eye,\n <i>Arkham Crime Wave</i>.\nTwo murder victims in a week and both missing several bones.\nEven for Arkham, that is unusual.\nThe writer of the article, Kathleen Ross, claims the town is sinking into a cesspit of crime.\nA editorial comment by John Johnson blames the notorious O'Bannion gang.\n\nSpecial Notes\n\nArkham Crime Wave is a murder mystery set in the 1920's.\nThe key evidence can be checked by examining items but\nnote-taking is recommended.\nIt is a sequel to the FFG scenario Gangs of Arkham.\nYou do not have to play Gangs of Arkham before playing.\nLike Gangs of Arkham, there is some 1920's slang.\nThe characters may use language and express views typical of the 1920's but not condoned by the author.
 QSTCANCEL,Cancel
 QSTCONTINUE,Continue
 QSTREVEAL,Reveal
@@ -120,7 +120,7 @@ EventPlaceSociety.text,You open the door.\nThe room is packed full of bookshelve
 EventPlaceChapel.button1,{qst:QSTCONTINUE}
 EventPlaceHolyWater.button1,{qst:QSTCONTINUE}
 EventCulprit6.button1,Button1
-TokenTestVariables.button1,Button1
+TokenTestStoryVariables.text,Story:{var:Story}\nKiller:{var:Killer}\nKiller Tall:{var:KillerTall}\nKiller Short:{var:KillerShort}\nKiller Smokes:{var:KillerSmokes}\nLola Tall:{var:LolaTall}\nLola Smokes:{var:LolaSmokes}\nPolice Tall:{var:PoliceTall}\nPoliceSmokes:{var:PoliceSmokes}\nProfessor Smokes:{var:ProfessorSmokes}\nNaomi Tall:{var:NaomiTall}\nNaomi Smokes:{var:NaomiSmokes}\nNaomi Alibi:{var:NaomiAlibi}\nSadie Alibi:{var:SadieAlibi}\nProfessorAlibi:{var:ProfessorAlibi}
 EventPlaceSpeakeasy.text,The door swings open, revealing a speakeasy which is nearly empty.\n\nPlace the {c:TileSpeakeasy} {qst:QSTTILE}.
 EventPlaceSpeakeasy.button1,{qst:QSTCONTINUE}
 EventPlaceAlley.text,The alley is deserted.\n\nPlace the {c:TileAlley} {qst:QSTTILE}.
@@ -160,7 +160,7 @@ EventPlaceSquare.text,Place the {c:TileSquare} {qst:QSTTILE}.
 EventPlaceSquareTokens.text,Place 3 Explore tokens.\nPlace {var:countSquareSights} Sight token(s).
 TokenEastStreetToSquare.button1,{qst:QSTREVEAL}
 TokenCornerToOffice.text,There is a sign on the door,<i>\nPolice Office</i>\n
-TokenTestVariables.text,Round: {var:#round}\nMythosMinor: {var:smythosMinor}
+TokenTestMythosVariables.button1,Continue
 EventPlaceMorgueSlabSM.text,He gestures to a body on a slab.<i>\nThis body was bought in late last night.\nThere has not yet been time to carry out a full autopsy.\n</i>\n{qst:QSTPLACESEARCH}
 EventPlaceOfficeToCorner.text,The door leads out into the street.\n\n{qst:QSTPLACEEXPLORE}
 EventKillerSmokesCigar.button1,{qst:QSTCONTINUE}
@@ -285,7 +285,6 @@ EventReporter1Talk.button2,{qst:QSTCANCEL}
 EventBilliardsTableDiceFail.text,{qst:QSTNAOMI} sees you examining the billiards table.\nShe removes something from the top pocket.
 EventBilliardsTableDiceFail.button1,{qst:QSTCONTINUE}
 EventKillerSmokesCigarette.button1,{qst:QSTCONTINUE}
-EventTestRevealKiller.button1,{qst:QSTCONTINUE}
 CustomMonsterRiot.info,-
 CustomMonsterRiot.monstername,Protest
 EventGainForensicEvidence.text,There are a number of bite marks and sucker marks all over the body.\nYou discover a fragment of cloth that was part of the victim's jacket.\n\nGain the {c:QItemForensicEvidence} Item.\n\n{qst:QSTEXAMINEITEM}
@@ -592,11 +591,12 @@ EventArrestedK3S2.text,Agent Craven says,<i>\nYou were right!\nWith the help of 
 EventArrestedK3S2.button1,{qst:QSTCONTINUE}
 EventArrestedK4S1.text,Agent Craven says,<i>\nYou were right!\nWith the help of the Newport Police, I arrested Police Officer Walker.\nLola kept the Bone Pipes safely locked away in a box until the box was stolen by Bugs O'Flanagan.\nPolice Officer Walker took the relic when he arrested Bugs for burglary.\nBugs figured out Walker had kept the relic for himself and blackmailed him.\nThe Lloigor entered Walker's mind and fed his anger.\nThe Lloigor helped Walker sacrifice Bugs and Duncan and Walker became its servant.</i>
 EventArrestedK4S1.button1,{qst:QSTCONTINUE}
-EventArrestedK4S2.text,Agent Craven says,\n<i>You were right!\nWith the help of the Newport Police, I arrested Police Officer Walker.\nThe Lloigor convinced Walker the whole town is plotting against him and must be destroyed.\nSince Walker organised the security for the Arkham Historical Society, it was easy for him to steal the relic.\nThe security guard figured out Walker was the one who stole the relic and demanded money to stay silent.\nThe Lloigor entered Walker's mind fed his anger.\nThe Lloigor helped Walker sacrifice the guard and Duncan.\n</i>
+EventArrestedK4S2.text,Agent Craven says,\n<i>You were right!\nWith the help of the Newport Police, I arrested Police Officer Walker.\nThe Lloigor convinced Walker the whole town is plotting against him and must be destroyed.\nSince Walker organised the security for the Arkham Historical Society, it was easy for him to steal the relic.\nThe security guard figured out Walker was the one who stole the relic and demanded money to stay silent.\nThe Lloigor entered Walker's mind, feeding off his rage and bigotry.\nThe Lloigor helped Walker sacrifice the guard and Duncan.\n</i>
 EventArrestedK4S2.button1,{qst:QSTCONTINUE}
 EventArrestedK5S1.text,Agent Craven says,<i>\nYou were right!\nWith the help of the Newport Police, I arrested John Johnson.\nLola Santiago kept the Bone Pipes safely in a box until\nBugs O'Flanagan stole the box.\nJohn Johnson offered Lola his help in retrieving the relic.\nHe paid Bugs for its return.\nAfter Bugs handed the pipes over, Johnson became encaptivated by the sound of the piping and decided to keep the relic for himself.\nBugs figured out Johnson had kept the relic and demanded money to keep quiet.\nThe Lloigor entered Johnson's mind and fed his anger.\nIt persuaded him to sacrifice Bugs in return for its help.\nThe Lloigor helped Johnson sacrifice Duncan when he entered the sewer.</i>
 EventArrestedK5S1.button1,{qst:QSTCONTINUE}
-EventArrestedK5S2.text,NOT DONE.\nThere is no reason why the editor should steal the relic from the museum.
+EventRitualK5S2.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\n{qst:QSTCOLONEL} was my ancestor!\nHe was a hero, willing to do anything to protect Arkham County from the Indian peril!\nLike him, I'm a patriot ready to die for what I believe in!\n\n</i>Suddenly, he screams as his body transforms.
+EventArrestedK5S2.text,Agent Craven says,<i>\nYou were right!\nWith the help of the Newport Police, I arrested John Johnson.\nHe's convinced he's the reincarnation of {qst:QSTCOLONEL}.\nJohnson spent a lot of time at the {qst:QSTSOCIETY} researching his ancestor.\nMy guess is the Lloigor entered Johnson's mind and fed his anger, prejudence and bigotry until he was driven mad.\nJohnson started the newspaper campaign to drive the last of the Misqat out of Arkham County.\nThe Lloigor helped him steal the pipes and sacrifice both the security guard and {qst:QSTDUNCAN}.\nJohnson set fire to his own newspaper office to destroy the newspaper archive.</i>
 EventArrestedK5S2.button1,{qst:QSTCONTINUE}
 EventArrestedK6.text,Agent Craven says,<i>\nYou were right!\nWith the help of the Newport Police, I arrested Professor Smith.\nThe Professor illegally sold relics of the Arkham Historical Society to avoid it going bankrupt.\nHe took the Bone Pipes during the preview evening to frame Lola Santiago.\nThe security guard, Mark Drew, worked out what was going on and blackmailed him,\nThe Lloigor entered the Professor's mind and he became its willing servant.\nThe Lloigor helped the Professor sacrifice the guard and Duncan.</i>
 EventArrestedK6.button1,{qst:QSTCONTINUE}
@@ -765,8 +765,7 @@ EventMapLabelS2.text,On the back of the map is a label,<i>\nProperty of Arkham H
 EventMapLabelS2.button1,{qst:QSTCONTINUE}
 SpawnSkeletonMorgue.text,A body breaks out of the morgue freezer.\nHis decomposing rotting flesh sloughs off his bones.\n\nSpawn a Skeleton monster as indicated.
 SpawnSkeletonMorgue.button1,{qst:QSTCONTINUE}
-TokenTestRound.text,Round: {var:#round}\nMythos Minor: {var:$mythosMinor}\nMythos Major: {var:$mythosMajor}\nMythos Deadly: {var:$mythosDeadly}
-EventTestRevealKiller.text,Story:{var:Story}\nKiller:{var:Killer}\nKiller Tall:{var:KillerTall}\nKiller Short:{var:KillerShort}\nKiller Smokes:{var:KillerSmokes}\nLola Tall:{var:LolaTall}\nLola Smokes:{var:LolaSmokes}\nPolice Tall:{var:PoliceTall}\nPoliceSmokes:{var:PoliceSmokes}\nProfessor Smokes:{var:ProfessorSmokes}\nNaomi Tall:{var:NaomiTall}\nNaomi Smokes:{var:NaomiSmokes}\nNaomi Alibi:{var:NaomiAlibi}\nSadie Alibi:{var:SadieAlibi}\nProfessorAlibi:{var:ProfessorAlibi}
+TokenTest.button1,Add all Items
 EventPlaceSewerEntrance.text,Place a Secret Passage token as indicated.\n
 EventPlaceSewerEntrance.button1,{qst:QSTCONTINUE}
 EventDefeatedLloigor.button1,Button1
@@ -891,12 +890,10 @@ EventProfessorTheftStory1.text,{qst:QSTPROFESSOR} says,<i>\nThere has been no bu
 EventProfessorTheftStory1.button1,{qst:QSTCONTINUE}
 EventProfessorTheftStory2.text,Professor Smith says,\n<i>I should not be talking about this as the incident could bring the Historical Society into disrepute.\nI would ask what I am about to say to be kept in strictist confidence.\nLast month there was a preview evening which was by invitation only.\nDuring the evening, a relic of the Misqat tribe was taken.\nSince then, the exhibit has been closed.</i>
 EventProfessorTheftStory2.button1,{qst:QSTCONTINUE}
-EventProfessorTheftEditorAlibi.button1,{qst:QSTCONTINUE}
 EventProfessorTheftSadieAlibi.button1,{qst:QSTCONTINUE}
 EventProfessorTheftSadieAlibi.text,Professor Smith says,<i>\nOnly three people at the preview exhibition had the opportunity to steal the relic and they were the newspaper editor John Johnson, Lola Santiago and Naomi O'Bannion.\nI suspect Lola as she was outraged the relic was on public display.\nAfter the relic was stolen, I had to fire the security guard Mark Drew because it was his job to guard the relic.\nI still don't know how the relic was stolen without him noticing.\nHe was near the display case all the time and, in addition, he had Police Officer Walker helping to provide extra security.\n</i>\nGain 1 {clue}.
 EventProfessorPersuade.text,Professor Smith looks at you suspiciously.\nYou tell him about the progress you've made in investigating the crimes in Arkham.\n\nYou may test either ({influence},2) or ({lore},2).\nAdd an additional die if you possess an Evidence or Tome Item.
 EventProfessorPersuade.button1,{qst:QSTPASS}
-EventProfessorTheftEditorAlibi.text,<i>Only two people at the special preview exhibition had an opportunity to steal the relic.\nThey were Lola Santiago and Naomi O'Bannion.\nAfter the relic was stolen, I had to fire the security guard Mark Drew because it was his job to guard the relic.\nI still don't know how the relic was stolen without him noticing.\nHe was near the display case all the time and, in addition, he had Police Officer Walker helping to provide extra security.\n</i>\nGain 1 {clue}.
 EventPlaceExhibit.button1,{qst:QSTCONTINUE}
 EventProfessorMissingStory1.text,{qst:QSTPROFESSOR} says,<i>\nThe Society cannot afford to pay for a security guard.\nThat's one reason I'm keeping an eye on the place.\nWith the recent disturbances, there was no choice but to close the building to the public.</i>
 EventProfessorMissingStory1.button1,{qst:QSTCONTINUE}
@@ -1227,8 +1224,8 @@ EventPlaceNaomiTalk.text,Naomi O'Bannion smiles and says,\n<i>A new face is alwa
 EventPlaceNaomiTalk.button1,{qst:QSTCONTINUE}
 EventPlaceNaomi1Tall.button1,{qst:QSTCONTINUE}
 EventBrandNaomiTall.text,You recall that Naomi wears high heels.\nIn her heels, she is close to the height of an average man.
-EventArrestedTruckMore.text,<I>Among the crates of whiskey, I found a box of ritual components, dinosaur bones and books.\nAmong the tomes I found the {c:QItemDeVermis}.\n</i>\n{rnd:hero} gains the {c:QItemDeVermis} Item.\n\n{qst:QSTEXAMINEITEM}
-EventPriestProfessorAlibi.text,<i>Police Officer Duncan was going to do the readings but \nProfessor Smith kindly agreed to do the readings instead.\nHe's a good Catholic and attends mass regularly.\nHe arrived early to help set things up and he was the last to leave.\n</i>\nGain 1 {clue}.
+EventArrestedTruckMore.text,<i>Among the crates of whiskey, I found a box of ritual components, dinosaur bones and books.\nAmong the tomes I found the {c:QItemDeVermis}.\n</i>\n{rnd:hero} gains the {c:QItemDeVermis} Item.\n\n{qst:QSTEXAMINEITEM}
+EventPriestProfessorAlibi.text,<i>Police Officer Duncan was going to do the readings but \nProfessor Smith kindly agreed to do the readings instead.\nHe's a good Catholic and attends mass regularly.\n\n</i>Gain 1 {clue}.
 EventGainHolyWater.text,You make a small donation in the donation box.\nFather Murray says,<i>\nPlease take some of the water I have blessed.\nMaybe you will find it of use.</i>\n\nYou use your hip flask to collect a small amount of holy water.\n\nGain the {c:QItemHolyWater} Item.
 EventBrandNaomiCigLedger.button1,{qst:QSTCONTINUE}
 EventLedgerNaomiAlibi.button1,{qst:QSTCONTINUE}
@@ -1348,11 +1345,13 @@ EventPuzzleLedgerClue.button1,{qst:QSTCONTINUE}
 EventPuzzleLedger.text,The entries in the ledger are recorded in code.
 EventPuzzleLedger.button1,{action} Solve the code.
 EventPuzzleLedger.button2,{qst:QSTCANCEL}
-PuzzleLedger34Level4.button1,{action} Read Ledger
-PuzzleLedger42Level4.button1,{action} Read Ledger
+PuzzleLedger34Level4.button1,{qst:QSTREADLEDGER}
+PuzzleLedger42Level4.button1,{qst:QSTREADLEDGER}
+PuzzleLedger42Level4Alternate.button1,{qst:QSTREADLEDGER}
 PuzzleLedger34Level5.button1,{qst:QSTREADLEDGER}
 PuzzleLedger42Level5.button1,{qst:QSTREADLEDGER}
 PuzzleLedger53Level5.button1,{qst:QSTREADLEDGER}
+PuzzleLedger53Level5Alternate,{qst:QSTREADLEDGER}
 EventFlapperLuckyRoll.button1,{qst:QSTCONTINUE}
 EventStorm.text, A mini tornado sweeps through the centre of SouthSide, ripping tiles off the old gambrel roofs, causing rickety chimneys to collapse and knocking people off their feet.\n\nAll investigators in an Outdoor space test ({agility},1)\nIf you fail, suffer 1 Damage.\n\nThe townsfolk flee Southside.\n\n<b>Remove all person tokens from the board.</b>
 EventPlaceInvestigatorsStation.button1,{qst:QSTCONTINUE}
@@ -1415,13 +1414,12 @@ EventNaomiBetDrawStory1.button1,{qst:QSTCONTINUE}
 EventSadieKillerNaomiTall.text,<i>Hey, I just remembered something.\nIn her youth, Naomi was into amateur dramatics and she was good at it.\nMaybe she's still good at disguises!</i>
 EventSadieKillerNaomiTall.button1,{qst:QSTCONTINUE}
 EventRescueGrabBoy.button1,{qst:QSTCONTINUE}
-TokenTestRound.button1,{qst:QSTCONTINUE}
 EventLolaKillerEditorSheldonGang.text,<i>Three weeks ago, John Johnson was beaten up by thugs belonging to the Sheldon gang.\nThey didn't like some of the articles in the Arkham Gazette.</i>
 EventLolaKillerEditorSheldonGang.button1,{qst:QSTCONTINUE}
 EventLolaKillerEditorOBannionGang.text,<i>Three weeks ago, John Johnson was badly beaten up by thugs belonging to the O'Bannion gang.\nThey didn't like some of the articles in the Arkham Gazette.</i>
 EventLolaKillerEditorOBannionGang.button1,{qst:QSTCONTINUE}
+EventLolaKillerStory2.text,<i>The town don't care what the O'Bannion thugs get up to as long as White folk are left alone.\nArkham is riven by race hate.\n{qst:QSTPOLICE} is a bigot who bullies hard-working shop-keepers like myself instead of doing his job.\n{qst:QSTEDITOR} is behind the campaign to make Arkham, as he calls it, 'a fit place for genuine Americans'!\nThe Misqat were here long before this town even existed!\nI tell you, things will come to a head\nThere will be a reckoning!</i>
 EventLolaKillerStory2.button1,{qst:QSTCONTINUE}
-EventLolaKillerStory2.text,<i>Two weeks ago, John Johnson was beaten up by thugs belonging to the O'Bannion gang.\nThey didn't like what he wrote about them in the Arkham Gazette.\n</i>
 EventMissingLinkClueAndAction.text,The clippings may provide the missing link to solving the crime.\n\nGain 2 {clue}.\n\n{qst:QSTCLUEACTION}
 EventMissingLinkClue.button1,{qst:QSTCONTINUE}
 EventLolaPipesStory2Default.button1,{qst:QSTCONTINUE}
@@ -1483,9 +1481,8 @@ EventReporter_Hint_Sadie.button2,{qst:QSTREPORTERSADIE}
 EventReporter_Hint_Sadie.button3,{qst:QSTNEVERMIND}
 EventReporterSadieShindig.button1,{qst:QSTCONTINUE}
 EventReporterSadieShindig.text,<i>Sadie's shindig was at her main speakeasy, the Rough and Tumbler.\nIt's across the river and way the other side of town.\nI hoped to get a scoop.\nI made sure to keep a close eye on Sadie all night.\nBertie Bingham tried to charm everyone but no one was fooled by his shtick.\nBertie even made a pass at me.\nI felt hypnotised before I snapped out of it.\nSadie found it hilarious when I told him to go screw himself.\nSadie just puts up with Bertie because he's acting as a go-between.\nSadie wants to avoid another gang war.\nBertie is more dangerous than he looks,\nI noticed when he left late that night, a flapper girl left with him.\nShe seemed to be under his spell.</i>
-EventMissingLinkS2Articles.text,<b>1. Is Naomi a Witch?</b>\nRecently, Naomi took over leadership of the O'Bannion gang.\nThere is a rumour she used black magic to kill the previous popular leader.\nIf true, the O'Bannion gang will turn on her.\n\n<b>2. Local Shopkeeper Arrested</b>\nLast week, Lola Santiago, the owner of the Curiosity Shop, was arrested by Police Officer Walker on suspicion of theft and handling stolen goods.\nShe was released with all charges dropped.\n\n<b>3. Police Officer Given Final Warning</b>\nLast week, Walker was given a final warning by the Police Commissioner for professional misconduct.\nLola Santiago is organising a protest demanding his resignation.\n\n<b>4. Historical Society Haunted</b>\nPassers-by have claimed the building is haunted.\nSome have heard an eerie piping sound disturb the quiet of the night.\n\n<b>5. Historical Society Scandal!</b>\nThere are rumors of financial irregularities and valuable relics and tomes have gone missing.\nThe Trustees of the Society have announced they will soon be carrying out a full investigation.
+EventMissingLinkS2Articles.text,<b>1. Is Naomi a Witch?</b>\nRecently, Naomi took over leadership of the O'Bannion gang.\nThere is a rumour she used black magic to kill the previous popular leader.\nIf true, the O'Bannion gang will turn on her.\n\n<b>2. Local Shopkeeper Arrested</b>\nLast week, Lola Santiago, the owner of the Curiosity Shop, was arrested by {qst:QSTPOLICE} on suspicion of theft and handling stolen goods.\nShe was released with all charges dropped.\n\n<b>3. Police Officer Given Final Warning</b>\nLast week, Walker was given a final warning by the Police Commissioner for professional misconduct.\nLola Santiago is organising a protest demanding his resignation.\n\n<b>4. Cleanse Arkham County!</b>\nA newspaper campaign claims there are too many Native Americans living in Arkham and they should be forced to leave the county.\nIn the letters pages, several citizens support the campaign, including Walker.\n\n<b>5. Historical Society Scandal!</b>\nThere are rumors of financial irregularities and valuable relics and tomes have gone missing.\nThe Trustees of the Society have announced they will soon be carrying out a full investigation.
 EventRitualK5S1.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\nHe shouts out,<i>\nBugs shouldn't have stolen the relic and, then, refused to give it back.\nHe shouldn't have attacked me at the hut.\nHe deserved to die and I'm grateful the Lloigor helped me kill him.\nI'm sorry Duncan died but he wouldn't stop digging and the Lloigor needed another sacrifice!\nSoon I will be strong enough to kill all the O'Bannion thugs.\n\n</i>Suddenly, he screams as his body transforms.
-EventRitualK5S2.text,Beneath the hood is John Johnson.\nHe takes a drink from a small green bottle.\nHe shouts out,<i>\nThe Bone Pipes belong to me.\nColonel Kane was my distant ancestor.\nThe security guard deserved to die and I'm grateful the Lloigor helped me kill him.\nI'm sorry Duncan died but he wouldn't stop digging and the Lloigor needed another sacrifice!\n\n</i>Suddenly, he screams as his body transforms.
 EventSadieNaomiStory1Killer1or2or4.text,<i>I had my boys bring Bugs here to explain I don't like trouble.\nSoon after he was arrested by Police Officer Walker.\nNaomi thinks I ratted him out but Bugs brought the heat upon himself.\nBugs was soon released.\nMaybe Walker messed up another investigation or maybe Naomi pulled a few strings.\nThe word on the street is Bugs is taking it on the lam.\n</i>
 EventLolaPipesStory1Killer3or4.button1,{qst:QSTCONTINUE}
 EventLolaPipesStory1Killer2or3or5.text,<i>A month ago, a mobster called Bugs O'Flanagan came to my shop and demanded money in return for protection.\nFortunately, John Johnson, was there and told him to clear off.\nBugs flew into a rage, picked up the box and threw it to the ground.\nIt burst open, revealing the pipes.\nThe pipes started to make an eerie whistling noise.\nSoon after, the box was stolen.\nI caught a glimpse of the thief as he ran off and I'm sure it was Bugs.\nJohn Johnson promised to retrieve the relic whatever the cost.\n</i>\nGain 1 {clue}.
@@ -1544,9 +1541,9 @@ EventBouncerTalk.text,{qst:QSTBOUNCERDEFAULT}
 EventBouncerTalk.button1,{qst:QSTSADIEBERTTALK}
 EventBouncerTalk.button2,{qst:QSTNEVERMIND}
 EventBouncerTalkBertie.text,The guy scowls at you and says,<i>\nI wouldn't trust Bertie as far as I could throw him.\nHe messes with all kinds of dangerous hocus-pocus.\nIf you're a friend of his, you're even dumber than you look!</i>
-EventBouncerTalkProf.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe're not friends but we keep in touch.\nWe served together in the Great War.\nWe saw things we ain't gonna forget.\nI'm tough but some don't come back the same - if you know what I mean! 
+EventBouncerTalkProf.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe're not friends but we keep in touch.\nWe served together in the Great War.\nI saw things I ain't gonna forget.\nI'm tough but some don't come back the same - if you know what I mean! 
 EventBouncerTalkProf.button1,{qst:QSTCONTINUE}
-EventBouncerTalkProfAlibi.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe keep in touch because he was my lieutenant in the Great War.\nHe was badly wounded.\nI helped drag him back to the lines.\nThis year his wound had started to play up again.\nHe can barely lift up a shovel.\nLast week, I visited him in the big hospital across the river.\nHe had a large piece of shrapnel removed from his shoulder.\nHe was discharged early this morning.</i>\n\n{qst:QSTGAINCLUE}
+EventBouncerTalkProfAlibi.text,Tony looks surprised you asked,\n<i>Sure, I know {qst:QSTPROFESSOR}.\nWe sometimes keep in touch.\He was my lieutenant in the Great War.\nHe was badly wounded.\nI helped drag him back to the lines.\nThis year his wound had started to play up again.\nHe can barely lift up a shovel.\nLast week, I visited him in the big hospital across the river.\nHe had a large piece of shrapnel removed from his shoulder.\nHe was discharged yesterday.</i>\n\n{qst:QSTGAINCLUE}
 EventBouncerTalkProfAlibi.button1,{qst:QSTCONTINUE}
 EventBouncerTalkBertie.button1,{qst:QSTCONTINUE}
 EventBouncerTalk_Bertie_Prof.text,{qst:QSTBOUNCERDEFAULT}
@@ -1561,10 +1558,27 @@ EventBouncerTalk_Prof.button1,{qst:QSTKNOWPROF}
 EventBouncerTalk_Prof.button2,{qst:QSTNEVERMIND}
 EventBouncerDefault.text,{qst:QSTBOUNCERDEFAULT}
 EventBouncerDefault.button1,{qst:QSTCONTINUE}
-QSTAUTOPSYFAIL,The autopsy of the bodies is mess+y and hard but you are close to success.
+QSTAUTOPSYFAIL,The examination is messy and difficult but you are close to success.
 EventSlabExamineFail.text,{qst:QSTAUTOPSYFAIL}
 EventSlabExamineFail.button1,{qst:QSTCONTINUE}
 EventFreezerSearchFail.text,{qst:QSTAUTOPSYFAIL}
 EventFreezerSearchFail.button1,{qst:QSTCONTINUE}
-EventBrandProfessorAlibi.text,You recall the gangster, Tony Zavaroni, claims the Professor was in hospital and was discharged early this morning.
+EventBrandProfessorAlibi.text,You recall the gangster, Tony Zavaroni, claims the Professor was in hospital and was discharged yesterday.
 EventBrandProfessorAlibi.button1,{qst:QSTCONTINUE}
+TokenSetKillerStory1.text,Set Killer for Story 1
+TokenSetKillerStory1.button1,Killer 1 {qst:QSTSADIE}
+TokenSetKillerStory1.button2,Killer 2 {qst:QSTNAOMI}
+TokenSetKillerStory1.button3,Killer 3 {qst:QSTLOLA}
+TokenSetKillerStory1.button4,Killer 4 {qst:QSTPOLICE}
+TokenSetKillerStory1.button5,Killer 5 {qst:QSTEDITOR}
+TokenSetKillerStory2.text,Set Killer for Story 2
+TokenSetKillerStory2.button1,Killer 2 {qst:QSTNAOMI}
+TokenSetKillerStory2.button2,Killer 3 {qst:QSTLOLA}
+TokenSetKillerStory2.button3,Killer 4 {qst:QSTPOLICE}
+TokenSetKillerStory2.button4,Killer 5 {qst:QSTEDITOR}
+TokenSetKillerStory2.button5,Killer 6 {qst:QSTPROFESSOR}
+TokenTest.text,Test
+TokenTestStoryVariables.button1,{qst:QSTCONTINUE}
+TokenTestMythosVariables.text,Round: {var:#round}\nHeroes: {var:#heroes}\nMythos Minor: {var:$mythosMinor}\nMythos Major: {var:$mythosMajor}\nMythos Deadly: {var:$mythosDeadly}
+EventPoliceResignFail.text,Police Officer Walker shouts,<i>\nMeddling do-gooders like you and Duncan are spreading fake lies.\nYou're all out to get me!</i>
+EventPoliceResignFail.button1,Continue
